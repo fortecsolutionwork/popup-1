@@ -28,24 +28,28 @@
             language.
           </h6>
           <form action="">
-            <select>
-              <option value="" disabled selected hidden>Country</option>
-              <option value="">India</option>
-              <option value="">USA</option>
-              <option value="">Caneda</option>
-              <option value="">Austrailia</option>
-              <option value="">England</option>
-              <option value="">Russia</option>
-            </select>
-            <select>
-              <option value="" disabled selected hidden>Language</option>
-              <option value="">English</option>
-              <option value="">Option</option>
-              <option value="">Option</option>
-              <option value="">Option</option>
-              <option value="">Option</option>
-              <option value="">Option</option>
-            </select>
+            <div class="select-wrapper">
+              <select>
+                <option value="" disabled selected hidden>Country</option>
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">Caneda</option>
+                <option value="">Austrailia</option>
+                <option value="">England</option>
+                <option value="">Russia</option>
+              </select>
+            </div>
+            <div class="select-wrapper">
+              <select>
+                <option value="" disabled selected hidden>Language</option>
+                <option value="">English</option>
+                <option value="">Option</option>
+                <option value="">Option</option>
+                <option value="">Option</option>
+                <option value="">Option</option>
+                <option value="">Option</option>
+              </select>
+            </div>
             <a class="cta-btn" href="about.html"> CLICK HERE TO GET STARTED </a>
             <a href="#" class="home_logo">
               <img src="images/Emris-BLACK.png" alt="" />
@@ -72,6 +76,14 @@
       $("#close_popup").click(function () {
         $(".popup").removeClass("show");
       });
+
+      $("select")
+        .focus(function () {
+          $(this).parent().addClass("active");
+        })
+        .blur(function () {
+          $(this).parent().removeClass("active");
+        });
     </script>
   </body>
 </html>
