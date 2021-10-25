@@ -141,8 +141,8 @@ body {
 .home_logo img {
   text-align: center;
   display: block;
-  margin: 5.865vh auto 0;
-  max-width: 100%;
+  margin: 13.583vh auto 0;
+  max-width: 285px;
   width: 100%;
 }
 .close_popup {
@@ -171,6 +171,7 @@ body {
   }
   .home_logo img {
     width: 50%;
+    margin-top: 9vh;
   }
 }
 
@@ -219,14 +220,14 @@ body {
     padding: 8px 15px 8px 11px;
     font-size: 12px;
     border-radius: 5px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
   .popup_wrapper .cta-btn {
     padding: 12px 10px;
     font-size: 12px;
     font-weight: 500;
     border-radius: 5px;
-    margin-top: 0;
+    margin-top: 20px;
   }
   .home_logo img {
     margin: 2.865vh auto 0;
