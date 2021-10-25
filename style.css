@@ -124,7 +124,7 @@ body {
   border-color: #094f72;
   color: #23233c;
 }
-.cta-btn {
+.popup_wrapper .cta-btn {
   box-shadow: 0 30px 50px rgba(27, 185, 255, 0.33);
   background-color: #094f72;
   font-family: "Futura LT";
@@ -165,14 +165,14 @@ body {
     padding: 10px 15px 10px 11px;
     font-size: 20px;
   }
-  .cta-btn {
+  .popup_wrapper .cta-btn {
     padding: 15px 0;
     font-size: 18px;
   }
 }
 
 @media (max-width: 1024px) {
-  .cta-btn {
+  .popup_wrapper .cta-btn {
     padding: 15px 10px;
     font-size: 16px;
     letter-spacing: 0;
@@ -198,34 +198,40 @@ body {
   }
   .popup_wrapper .right-side img {
     border-radius: 20px 20px 0 0;
-    max-height: 280px;
+    max-height: 250px;
   }
   .close_popup {
     right: 15px;
     top: 15px;
   }
   .popup .heading {
-    font-size: 25px;
+    font-size: 20px;
   }
   .popup .title {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2em;
     margin-top: 5px;
   }
   .popup_wrapper .left-side select {
-    padding: 5px 15px 5px 11px;
+    padding: 8px 15px 8px 11px;
     font-size: 12px;
     border-radius: 5px;
     margin-bottom: 8px;
   }
-  .cta-btn {
-    padding: 5px 10px;
+  .popup_wrapper .cta-btn {
+    padding: 12px 10px;
     font-size: 12px;
     font-weight: 500;
     border-radius: 5px;
+    margin-top: 0;
   }
   .home_logo img {
     margin: 2.865vh auto 0;
     max-width: 40%;
+  }
+  .select-wrapper::before,
+  .select-wrapper.active::before {
+    top: 57%;
+    background-size: 60%;
   }
 }
