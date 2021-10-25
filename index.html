@@ -55,6 +55,12 @@
         <div class="col right-side">
           <img src="images/girl-image.png" alt="" />
         </div>
+        <img
+          src="images/close_btn.png"
+          alt=""
+          class="close_popup"
+          id="close_popup"
+        />
       </div>
     </section>
 
@@ -62,6 +68,9 @@
     <script>
       $("#buynow").click(function () {
         $(".popup").addClass("show");
+      });
+      $("#close_popup").click(function () {
+        $(".popup").removeClass("show");
       });
     </script>
   </body>
